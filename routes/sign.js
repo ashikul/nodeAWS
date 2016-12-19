@@ -34,10 +34,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-    res.send({
-        data: 'hey123',
-        test: true
-    });
+    res.send('Hello API Event Received');
 });
 
 module.exports = router;
