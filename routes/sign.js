@@ -17,7 +17,7 @@ var hellosign = require('hellosign-sdk')({
 // });
 
 // var ndapdf = '../assets/NDA.pdf';
-var ndapdf = process.cwd() +  "/assets/NDA.pdf";
+var ndapdf = process.cwd() +  "/routes/NDA.pdf";
 
 var options = {
     test_mode: 1,
@@ -40,7 +40,7 @@ var options = {
         }
     ],
     // files: ['NDA.pdf']
-    files: ['assets/NDA.pdf']
+    files: ['routes/NDA.pdf']
 };
 
 /* GET sign listing. */
