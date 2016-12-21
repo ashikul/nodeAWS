@@ -25,8 +25,8 @@ var options = {
     clientId: 'd6549f6f55de34ef02b0b9004a97272b',
 
     // template_id : 'c0b0d6d496d11b1b365deb403580feec',
-    subject: '1My First embedded signature request with a reusable form',
-    message: '1Awesome, right?',
+    subject: 'NDA pdf embed sign example',
+    message: 'Testing examples',
     signers: [
         {
             email_address: 'jack@example.com',
