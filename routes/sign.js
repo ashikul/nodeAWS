@@ -51,10 +51,10 @@ router.get('/', function (req, res, next) {
     });
 });
 
-router.get('/hello', function (req, res, next) {
+router.get('/NDA', function (req, res, next) {
 
     var result;
-    console.log('HELLO!');
+    console.log('NDA!');
     console.log(ndapdf);
     // console.log(hellosign.signatureRequest.createEmbedded(options));
 
@@ -66,14 +66,13 @@ router.get('/hello', function (req, res, next) {
         .then(function (response) {
             console.log('URL = ' + response.embedded.sign_url);
             result = response.embedded.sign_url;
+            res.send(result);
         })
         .catch(function (err) {
             //catch error
             console.log('ERROR');
             console.log(err);
         });
-
-    res.send(result);
 
     // //TODO: this crap aint workgin!!!
     // return hellosign.signatureRequest.createEmbedded(options)
